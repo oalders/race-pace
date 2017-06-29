@@ -3,7 +3,7 @@ package RacePace::Role::Common;
 use Moo::Role;
 
 use CLDR::Number::Format::Decimal ();
-use DateTime ();
+use DateTime                      ();
 use MooX::Options;
 use Types::Standard qw( Num Str );
 

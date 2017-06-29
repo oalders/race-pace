@@ -22,7 +22,25 @@ option total_time => (
 );
 
 sub _build_pace {
-    return sprintf '%d:%02d:%02s', 0, 0, 0;
+    my $self  = shift;
+    my @parts = split( m{:}, $self->total_time );
+    my $time  = pop @parts;
+    if (@parts) {
+        $time += pop(@parts) * 60;
+    }
+    if (@parts) {
+        $time += pop(@parts) * 60 * 60;
+    }
+
+    my $pace = $time / $self->distance_as_km;
+    my $minutes;
+
+    if ( $pace / 60 >= 1 ) {
+        $minutes = int( $pace / 60 );
+        $pace -= $minutes * 60;
+    }
+
+    return sprintf( '%i:%.2d/km', $minutes || '00', $pace || '00' );
 }
 
 1;

@@ -40,7 +40,7 @@ sub _build_total_time {
         maximum_fraction_digits => 0,
     );
 
-    return sprintf '%d:%02d:%02s',
+    return sprintf '%02d:%02d:%02s',
         $formatter->format($total_hours),
         $formatter->format($total_minutes),
         $formatter->format($total_seconds);
