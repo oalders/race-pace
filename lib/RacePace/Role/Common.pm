@@ -53,7 +53,7 @@ sub _build_distance_as_km {
         return $units eq 'mi' ? $distance * $self->mi_to_km : $distance;
     }
 
-    if ( $distance !~ m{[^\w]} ) {
+    if ( $distance !~ m{[^\w\.]} ) {
 
         # default to km
         return $distance;

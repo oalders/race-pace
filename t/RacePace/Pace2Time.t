@@ -31,6 +31,10 @@ my @tests = (
         { total_time => '00:27:30' }
     ],
     [
+        { distance   => '5.5km', pace => '5:30' },
+        { total_time => '00:30:15' }
+    ],
+    [
         { distance   => '5mi', pace => '5:30' },
         { total_time => '00:44:15' }
     ],
