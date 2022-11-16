@@ -2,6 +2,7 @@ use strict;
 use warnings;
 
 use Test2::Bundle::More;
+use Test2::Plugin::BailOnFail;
 
 use RacePace::Pace2Time;
 
