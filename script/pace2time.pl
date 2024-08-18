@@ -9,6 +9,8 @@ my $rp = RacePace::Pace2Time->new_with_options;
 
 print $rp->total_time, "\n";
 
+# PODNAME: pace2time
+
 =pod
 
 =head1 SYNOPSIS

@@ -32,3 +32,5 @@ for my $segment (@timing) {
 }
 
 say "total time\t", $now->hms;
+
+# PODNAME: tri

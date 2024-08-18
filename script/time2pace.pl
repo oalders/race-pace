@@ -9,6 +9,8 @@ my $rp = RacePace::Time2Pace->new_with_options;
 
 print $rp->pace, "\n";
 
+# PODNAME: time2pace
+
 =pod
 
 =head1 SYNOPSIS

@@ -2,8 +2,6 @@
 
 RacePace - Race pace calculations for runners
 
-[![Build Status](https://travis-ci.org/oalders/race-pace.png?branch=master)](https://travis-ci.org/oalders/race-pace)
-
 # VERSION
 
 version 0.000001
